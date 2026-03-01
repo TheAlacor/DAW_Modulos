@@ -16,12 +16,12 @@ Este repositorio está estructurado por módulos, cada uno con sus respectivos e
 ## 🗂️ Estructura del Repositorio
 
 DAW/
-│
-├── Programacion/
-├── BaseDeDatos/
-├── EntornosDeDesarrollo/
-├── LenguajeDeMarcas/
-└── Digitalizacion/
+
+ Programacion/
+ BaseDeDatos/
+ EntornosDeDesarrollo/
+ LenguajeDeMarcas/
+ Digitalizacion/
 
 
 ---
