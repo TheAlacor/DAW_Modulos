@@ -1,0 +1,61 @@
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    display: grid;
+    /* auto-fill hará que se creen tantas columnas como quepan */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 25px; 
+    padding: 30px;
+    margin: 0;
+}
+
+h1 {
+    /* Ocupa toda la fila superior */
+    grid-column: 1 / -1; 
+    
+    color: blue;
+    font-size: 24px;
+    letter-spacing: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+p {
+    color: darkblue;
+    background-color: rgb(6, 191, 191);
+    border: 3px dotted darkblue;
+    
+    /* ¡IMPORTANTE!: 100% para que respete las columnas del grid */
+    width: 100%; 
+    height: 150px;
+    padding: 20px;
+    font-style: italic;
+    margin: 0; 
+    
+    /* Box-sizing asegura que el padding no rompa el tamaño del rectángulo */
+    box-sizing: border-box; 
+
+    /* Centrado del contenido */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    
+
+    /* Gestión de texto largo */
+    overflow-y: auto;
+    word-wrap: break-word;
+    
+    /* Opcional: una suave sombra para que parezcan tarjetas */
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+p::first-letter {
+    font-size: 250%;
+    line-height: 0.8; 
+    margin-right: 8px;
+    font-weight: bold;
+    /* Evita que el texto flote raro dentro del flex */
+    float: none; 
+}

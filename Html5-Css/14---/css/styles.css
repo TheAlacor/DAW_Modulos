@@ -1,0 +1,22 @@
+ol,h1 {
+    margin-left: 20px;
+    margin-bottom: 1;
+    margin-right: 10px;
+}
+
+div {
+    border: 3px solid red;
+    width: fit-content;
+  }
+
+/*lista 2*/
+div:last-of-type {
+    position: relative;
+    left: 335px;
+    top: -460px;
+}
+
+div > ol:nth-of-type(2) {
+    position: relative;
+    left: 200px;
+}

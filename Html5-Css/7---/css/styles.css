@@ -1,0 +1,95 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: auto;
+    padding: 2em;
+}
+
+table tr {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table:nth-last-of-type(1) {
+    position: relative;
+    left: 205px;
+    top: -169px;
+}
+
+
+
+table:nth-of-type(1) td:first-child {
+    background-color: white;
+}
+
+table:nth-of-type(1) td:nth-child(2) {
+    background-color: red;
+}
+
+table:nth-of-type(1) td:nth-child(3) {
+    background-color: green;
+}
+
+table:nth-of-type(1) td:nth-child(4) {
+    background-color: blue;
+}
+/*Tabla 1 filas*/
+table:nth-of-type(1) tr:nth-child(1) {
+    color: teal;
+}
+
+table:nth-of-type(1) tr:nth-child(2) {
+    color: red;
+}
+
+table:nth-of-type(1) tr:nth-child(3) {
+    color: blue;
+}
+
+table:nth-of-type(1) tr:nth-child(4) {
+    color: orange;
+}
+
+table:nth-of-type(1) tr:nth-child(5) {
+    color: purple;
+}
+
+table:nth-of-type(1) tr:nth-child(6) {
+    color: olive;
+}
+
+table:nth-of-type(1) tr:nth-child(7) {
+    color: fuchsia;
+}
+
+table:nth-of-type(1) tr:nth-child(8) {
+    color: green;
+}
+
+/*tabla 2*/
+table:nth-of-type(2) tr:nth-child(odd) {
+    background-color: white;
+}
+
+table:nth-of-type(2) tr:nth-child(even) {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+

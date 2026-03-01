@@ -1,0 +1,21 @@
+/*Defining order of layers*/
+@layer base, componentes, utilidades;
+
+/* Capa de menor prioridad */
+@layer base {
+    #protagonista {
+        color: gray;
+    }
+}
+
+/* Capa de mayor prioridad */
+@layer utilidades {
+    p {
+        color: brown;
+    }
+}
+
+/* Regla fuera de capas (ganará a todas las capas) */
+.texto-base {
+    color: black;
+}

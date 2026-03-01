@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+}
+
+body { 
+  background: linear-gradient(rgba(220, 220, 220, 0.7), rgba(220, 220, 220, 0.7)), 
+              url(../img/HTML5_logo_and_wordmark.svg.png);
+  background-size: 120px;
+  background-repeat: repeat;
+  
+}
+
+a {
+  background-color: gray; 
+  color: white;              
+  text-decoration: none;     
+  display: inline-block;     
+  border: 1px;              
+  transition: 0.3s;
+  padding: 5px;          
+}
+
+a:hover {
+  background-color: darkgray;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h3 {
+    color: green;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr {
+   border-collapse: collapse;
+    border: 1px solid black; 
+}
+
+table td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}

@@ -1,0 +1,67 @@
+Drop database if exists baseball;
+Create database if not exists baseball;
+use baseball;
+
+Drop table if exists players;
+Create table if not exists players (
+    PLAYER_ID tinyint,
+    FIRSTS_NAME varchar2(20) not null,
+    LAST-NAME varchar2(30) not null,
+
+    primary key(PLAYER_ID)
+);
+
+Drop table if exists stats;
+Create table if not exists stats (
+    PLAYER_ID tinyint,
+    foreign key (PLAYER_ID) references players(PLAYER_ID),
+    YEAR int,
+    AB int,
+    HITS int,
+    HR int,
+    RBI int,
+    TEAM varchar2(4)
+
+    primary key(PLAYER_ID)
+);
+
+insert into table (players) values (1,'Barry','Bonds);
+insert into table (players) valeus (2,'Hank','Aaron');
+insert into table (players) values (3,'Babe','Ruth');
+insert into table (players) values (4,'Willie','Mays');
+insert into table (players) values (5,'Sammy','Sosa');
+
+insert into (stats) values (1,2006,367,99,26,77,'SFG');
+insert into (stats) values (1,2007,340,94,28,66,'SFG');
+insert into (stats) values (2,1954,468,131,13,69,'MLN');
+insert into (stats) values (2,1955,602,189,27,106,'MLN');
+insert into (stats) values (2,1956,609,200,26,92,'MLN');
+
+-- queries
+
+-- 1
+
+SELECT year, ab, hits from Stats;
+
+-- 2
+SELECT year from Stats
+group by player_id
+where hr > 50;
+
+-- 3
+SELECT year from Stats
+order by desc
+where hr > 50;
+
+-- 4
+SELECT First_name, Last_name, year, COUNT(hr) from players
+join stats on stats.player_id = players.player_id
+where sum(hr) > 50;
+
+-- 5
+SELECT players.* sum(hr) from player
+join stats on stats.player_id = players.player_id
+group by stats.player_id;
+
+
+//notes constraint,summit,group by, having

@@ -1,0 +1,22 @@
+body{
+    margin: auto;
+    padding: 5%;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+ul{
+    position: absolute;
+    display: flex;
+    font-weight: bolder;
+    border: none;
+    background-color: gray;
+}
+
+
+li:hover{
+    color: white;
+    transform: scale(10% 10%);
+}

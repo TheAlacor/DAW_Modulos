@@ -1,0 +1,42 @@
+#as_bastos{
+    box-shadow: 10px 10px 5px;
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    z-index: 1;
+}
+
+#dos_bastos{
+    position: absolute;
+    box-shadow: 10px 10px 5px;
+    left: 25%;
+    top: 50%;
+    z-index: 2;
+}
+
+#as_copas{
+    position: absolute;
+    box-shadow: 10px 10px 5px;
+    left: 30%;
+    top: 55%;
+    z-index: 3;
+}
+
+#as_espadas{
+    position: absolute;
+    box-shadow: 10px 10px 5px;
+    left: 35%;
+    top: 60%;
+    z-index: 4;
+}
+
+#as_oros{
+    position: absolute;
+    left: 40%;
+    top: 65%;
+    z-index: 5;
+}
+
+div:hover{
+    transform: translate(15%, -40%);
+}

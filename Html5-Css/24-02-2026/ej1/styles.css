@@ -1,0 +1,21 @@
+
+
+
+#div1{
+    width: 100%;
+    background-color: yellow;
+}
+
+#div2{
+    width: 100%;
+    background-color: blue;
+}
+
+footer{
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
